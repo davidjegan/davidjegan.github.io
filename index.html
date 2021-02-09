@@ -1,79 +1,373 @@
-
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-<header><title>David Jegan</title></header>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>		
+		<title>David Jegan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<style type="text/css">
+			.imgdev {
+ 				 max-width: 100%;
+ 				 margin-left: auto;
+				 margin-right: auto;
 
-<meta http-equiv="refresh" content="4; URL='http://www.acsu.buffalo.edu/~davidjeg'"/>
+ 				 }
+ 			.zoom {
 
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+ 				   transition: transform .2s;
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("background.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+ 				 }
 
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
+ 			.zoom:hover {
+   				 -ms-transform: scale(1.5); /* IE 9 */
+   				 -webkit-transform: scale(1.5); /* Safari 3-8 */
+   				 transform: scale(1.5); 
+ 				 }
 
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
+ 			.mycontainer {
+ 				   position: relative;
+  
+ 				}
 
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
+ 			.myimage1 {
+ 				  display: block;
+   				  width: auto;
+ 				  height: auto;
+ 				}
 
-.anchortagpage a:link, .anchortagpage a:visited {
-  background-color: white;
-  color: black;
-  border: 2px solid green;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
+ 			.myoverlay {
+ 				  position: absolute;
+ 				  bottom: 0;
+ 				  left: 0;
+ 				  right: 0;
+ 				  background-color: white;
+ 				  overflow: hidden;
+ 				  width: 40%;
+ 				  height: 0;
+ 				  transition: .5s ease;
+ 				}
 
-.anchortagpage a:hover, .anchortagpage a:active {
-  background-color: green;
-  color: white;
-}
+ 				.mycontainer:hover .myoverlay {
+ 				  height: 10%;
+ 				  width: 40%
+ 				}
 
-</style>
-</head>
-<body>
+ 				.myoverlaytext {
+ 				  white-space: nowrap; 
+ 				  color: black;
+ 				  font-size: 20px;
+ 				  position: absolute;
+ 				  overflow: hidden;
+ 				  top: 50%;
+ 				  left: 50%;
+ 				  transform: translate(-50%, -50%);
+ 				  -ms-transform: translate(-50%, -50%);
+ 				}
+ 				.ribbon {
+  				font-size: 16px !important;
+ 				width: 90%;    
+ 				 position: relative;
+ 				 background: #e8edee;
+ 				 color: #fff;
+  				text-align: center;
+  				padding: 1em 2em; /* Adjust to suit */
+  				margin: 2em auto 3em; 
+ 				}
+ 				.ribbon:before, .ribbon:after {
+  				content: "";
+  				position: absolute;
+  				display: block;
+  				bottom: -1em;
+  				border: 1.5em solid #231f20;
+  				z-index: -1;
+ 				}
+ 				.ribbon:before {
+  				left: -2em;
+  				border-right-width: 1.5em;
+  				border-left-color: transparent;
+ 				}
+ 				.ribbon:after {
+  				right: -2em;
+  				border-left-width: 1.5em;
+  				border-right-color: transparent;
+ 				}
+ 				.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  				content: "";
+  				position: absolute;
+  				display: block;
+  				border-style: solid;
+  				border-color: #425563 transparent transparent transparent;
+  				bottom: -1em;
+ 				}
+ 				.ribbon .ribbon-content:before {
+  				left: 0;
+  				border-width: 1em 0 0 1em;
+ 				}
+ 				.ribbon .ribbon-content:after {
+  				right: 0;
+  				border-width: 1em 1em 0 0;
+ 				}
 
-<div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">I am David</h1>
-    <p>And you are being redirected to</p>
-    <button><a class="anchortagpage" href="'http://www.acsu.buffalo.edu/~davidjeg'">My Homepage</a></button>
-  </div>
-</div>
+		</style>
+	</head>
+	<body>
 
-</body>
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1><a href="index.html">Home</a></h1>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Menu -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="certifications.html">Certifications</a></li>
+					<li><a href="projects.html">Projects</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<div class="content">
+						<footer class="major">
+						<h2>Bonjour! I'm <strong>David Jegan</strong></h2><br>
+						<h3>Currently pursuing MS in CS at <a href="http://engineering.buffalo.edu/computer-science-engineering.html" target="_blank"> State University of New York (SUNY) </a> at Buffalo. I had been working as a Full-Stack Developer at <a href="https://www.tcs.com/cloud-technologies" target="_blank">TCS Digital Enterprises </a> for more than two years</h3>
+						
+						</footer>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section id="banner-underground" class="wrapper style1">
+				<div class="inner">
+					<div class="spotlights">
+						<section>
+							
+							<span class="image zoom">
+							<a href="https://bored-app.mailtodavidjegan.now.sh" target="_blank">	
+								<img src="images/codebuff/codebuff.png" alt="" />
+							</a>
+							<strong >Title Winner: {Code: Buffalo} 2019 Hackathon</strong>
+							</span>
+
+							
+
+						<div class="content">
+							<span class="image zoom">
+							<a href="https://devpost.com/software/lease-genie" target="_blank">	
+								<img src="images/banner3.png" alt="" />
+							</a>					   	
+							<strong >Best Financial Hack - CapitalOne</strong>
+							</span>
+
+							<span class="image zoom">
+							<a href="https://devpost.com/software/augmentation-perpetuation" target="_blank">	
+								<img src="images/codebuff/ub.jpg" alt="" />
+							</a>					   	
+							<strong >Best AR technology App - M&T Tech</strong>
+							</span>
+							</div>
+
+
+
+
+
+			
+						</section>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+
+
+
+		<!-- One -->
+
+			<section id="banner-underground" class="wrapper style1">
+				<div class="inner">
+					<div class="spotlights mycontainer content">
+						<section>
+							<span class="image myimage"><img src="images/pic01.jpg" alt="" /></span>
+							<div class="myoverlay">
+    							<div class="myoverlaytext">
+
+						<a href="https://twitter.com/JeganAbishek" class="icon fa-twitter"> &nbsp &nbsp</a>
+						<a href="https://github.com/davidjegan" class="icon fa-github">&nbsp &nbsp</a>
+						<a href="https://linkedin.com/in/david-jegan-abishek-39556684/" class="icon fa-linkedin">&nbsp &nbsp</a>
+
+						<a href="mailto:davidjeg@buffalo.edu" class="icon fa-envelope"> &nbsp &nbsp</a>
+    							</div>
+ 					 		</div>
+							<div class="content">
+							<header class="major">
+								<h2>David Jegan Abishek Dominique</h2>
+							</header>
+								<p>
+
+									<b>I am a developer with a keen interest in Python, Cloud technologies, Data Mining, Cryptography, Web Development, IoT &amp; Algorithms. </b>
+									
+
+									<b>Also, I am a certified Google Cloud and AWS Professional who has more than two years of industrial experience.
+									</b>    
+									<br><br>
+
+									<b>I have previously affiliated with the Cloud Research Unit of <a href="https://www.tcs.com/tcs-cloud-solutions" target="_blank">Tata Consultancy Services</a>. I obtained my Bachelor's degree from <a href="http://www.sastra.edu" target="_blank">SASTRA University </a> and am currently an MS candidate at <a href="http://engineering.buffalo.edu/computer-science-engineering.html" target="_blank">
+									UB</a>.</b>
+
+									<br><br>
+
+									<b>I created a fascinating club called <a href="https://bakingpi.github.io" target="_blank">Baking Pi</a> and spend my free time chatting with chatbots.</b>
+									<b>I ❤️ Quiz, History and spending countless hours discussing World politics.</b></p>
+
+
+
+
+
+								</p>
+<center>
+								<a href="https://twitter.com/jeganabishek?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @jeganabishek</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+								<!-- Place this tag where you want the button to render. -->
+								<a class="github-button" href="https://github.com/davidjegan" aria-label="Follow @davidjegan on GitHub">Follow @davidjegan</a>
+</center>
+
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+	
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<header class="major">
+						<h2>Experience</h2>
+					</header>
+					<div class="features">
+						<section>
+							<span class="icon"><img src="images/orgs/ub.png" alt="" width="40%" /></span>
+							<h3>Research Assistant at University at Buffalo, New York</h3>
+							<h3>May 2019 – July 2019</h3>
+							<p>Developing efficient algorithms to predict polarization in social media using temporal and spatial data</p>
+						</section>
+
+						<section>
+							<span class="icon"><img src="images/orgs/tcs.png" alt="" width="40%" /></span>
+							
+
+							<h3>Systems Engineer at Tata Consultancy Services, Chennai</h3>
+							<h3>June 2016 - June 2018</h3>
+							<p>Automated Code deployment & development by building an end-to-end Devops pipeline on Cloud</p>
+						</section>
+						<section>
+							<span class="icon"><img src="images/orgs/uab.png" alt="" width="40%" /></span>
+							<h3>Research Intern at Universitat Autònoma de Barcelona</h3>
+							<h3>Feb 2016 – June 2016</h3>							
+							<p>Simulated a robust ecosystem with Unity3D to predict the driving action with 87% accuracy</p>
+						</section>
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+
+
+
+
+
+
+
+
+			<section id="one" class="wrapper style9">
+				<div class="inner">
+				<header class="major">
+						<h2>Publications & Organizations</h2>
+					</header>
+
+					<div class="content">
+						<span class="image left">
+							<img src="images/pubs/publication-pi.jpg" alt="" style="width:70%;height:44%;"/>
+						</span>
+							<a href="http://ieeexplore.ieee.org/document/7124796/" target="_blank"><h3>Tweeting Pi: An household computerization system</h3></a>
+							<p>Presented at ICECS at Coimbatore in 2015. Later it was published in IEEE and Scopus</p><br><br><br>
+							<span class="image left">
+							<img src="images/pubs/publication-qr.jpg" alt="" style="width:70%;height:44%;"/>
+						</span>
+							<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7458377" target="_blank"><h3>An Impregnable Data Masking Technique using Quick Response code</h3></a>
+							<p>Presented at IWSDA at Bangalore in 2015</p>
+							
+						<br>
+
+
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+
+			<section id="main" class="wrapper">
+				<header>
+					<br>
+					<section>
+						<div class="box alt">
+							<div class="row uniform">
+								<div class="4u"><a href="blog.html"><span class="image fit"><img src="images/asset-blog.jpg" alt="" /></a><h3>Personal Blog</h3></span></div>
+								<div class="4u"><a href="certifications.html"><span class="image fit"><img src="images/asset-certifications.jpg" alt="" /></a><h3>Certification</h3></span></div>
+								<div class="4u"><a href="projects.html"><span class="image fit"><img src="images/asset-project.jpg" alt="" /></a><h3>Project Work</h3></span></div>
+							</div>
+						</div>
+					</section>
+				</header>	
+			</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://twitter.com/JeganAbishek" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://facebook.com/davidjegan.abi" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/david_jegan/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/davidjegan" class="icon fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://linkedin.com/in/david-jegan-abishek-39556684/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:davidjeg@buffalo.edu" class="icon fa-envelope"><span class="label">Envelope</span></a></li>
+					</ul>
+					<ul class="contact">
+						<li><a href="https://www.google.co.in/maps/place/Buffalo,+NY/@42.8962176,-78.9344822,12z/data=!3m1!4b1!4m5!3m4!1s0x89d3126152dfe5a1:0x982304a5181f8171!8m2!3d42.8864468!4d-78.8783689" class="icon fa-map-marker"><span class="label"></span> &nbsp;&nbsp; Buffalo, NY 14214</a></li>
+						<li>(+1) 716 529 9285 </li>
+					</ul>
+					<ul class="links">
+						<li><a href="working.html">Support</a></li>
+						<li><a href="terms.html">Terms</a></li>
+						<li><a href="https://bakingpi.github.io">Baking Pi</a></li>
+					</ul>
+					<p class="copyright">&copy; David Jegan Abishek. All rights reserved.</p>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+			<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+	</body>
 </html>

@@ -1,0 +1,548 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>David Jegan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<style type="text/css">
+
+
+
+
+h1 {
+  word-break: break-all;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #F4F2EF;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+
+.myImgclass {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImgclass:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+/* The Close Button */
+.close-me-at-times {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-me-at-times:hover,
+.close-me-at-times:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* Style the buttons */
+
+</style>
+
+
+	</head>
+	<body>
+
+
+		<!-- Header -->
+		<header id="header">
+				<h1><a href="index.html">Home</a></h1>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Menu -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="certifications.html">Certifications</a></li>
+					<li><a href="projects.html">Projects</a></li>
+
+				</ul>
+			</nav>
+
+
+		<!-- Banner -->
+			<section id="main" class="wrapper">
+			<header>
+						<h2>Projects</h2><br>
+						<p> Some pet projects using my favorite frameworks and technologies!!</p>
+							
+			</header>
+			
+				<div class="inner">
+					<section>
+						<div class="box alt">
+							<div class="row uniform">
+
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('ml')"> AI</button>
+  <button class="btn" onclick="filterSelection('ca')"> Hardware</button>
+  <button class="btn" onclick="filterSelection('dic')"> Data Science</button>
+  <button class="btn" onclick="filterSelection('other')"> Others</button>
+</div>
+
+
+<div class="row">
+
+
+
+
+
+  
+					
+
+
+
+
+
+    <div class="column ml">
+    <div class="content">
+		<span class="image fit myImgclass">
+		<img id="myImg" src="images/blog/blog-LETOR.jpg" alt="LETOR-using-ML-Linear-Regression" width="10px">
+		</span>
+      	<a href="https://github.com/davidjegan/LETOR-using-ML-Linear-Regression" target="_blank">    
+			<center>   
+				<button class="btn"> Learning to Rank </button>
+			</center>
+		</a><br>
+		<p>Linear regression used to solve Learning to Rank problem</a>
+		</p>      	
+    </div>
+  </div>
+
+
+
+
+
+  <div class="column ml">
+    <div class="content">
+		<span class="image fit myImgclass">
+		<img id="myImg1" src="images/blog/blog-Handwritten.jpg" alt="Handwritten">
+		</span>
+      	<a href="https://github.com/davidjegan/Handwritten-digit-detection-using-Ensemble-Learning" target="_blank">    
+			<center>   
+				<button class="btn"> Digit classification </button>
+			</center>
+		</a><br>
+			<p>Handwritten digit detection using Ensemble-Learning
+		</p>      	
+    </div>
+  </div>
+
+
+
+
+
+
+	<div class="column ml">
+    <div class="content">
+		<span class="image fit myImgclass">
+		<img id="myImg2" src="images/blog/blog-Handwriting.jpg" alt="reinforced">
+		</span>
+      	<a href="https://github.com/davidjegan/Handwriting-Recognition-using-Linear-and-Logistic-Regression" target="_blank">    
+			<center>   
+				<button class="btn"> Handwriting Recognition </button>
+			</center>
+		</a><br>
+			<p>Handwriting Recognition using Linear and Logistic Regression
+		</p>      	
+    </div>
+  </div>
+
+
+
+
+	<div class="column ml">
+    <div class="content">
+		<span class="image fit myImgclass">
+		<img id="myImg3" src="images/blog/blog-reinforced.jpg" alt="reinforced">
+		</span>
+      	<a href="https://github.com/davidjegan/Game-play-using-Reinforced-Learning" target="_blank">    
+			<center>   
+				<button class="btn"> Reinforced Learning </button>
+			</center>
+		</a><br>
+			<p>Gameplay using Reinforced Learning with DQN based reward system
+		</p>      	
+    </div>
+  </div>
+
+
+	<div class="column ca">
+    <div class="content">
+		<span class="image fit myImgclass">
+		<img id="myImg4" src="images/blog/blog-ca1.jpg" alt="8 bit MIPS">
+		</span>
+      	<a href="host/Course/CA-1.pdf" target="_blank">    
+			<center>   
+				<button class="btn"> 8 Bit MIPS </button>
+			</center>
+		</a><br>
+			<p>8 bit MIPS Processor design and implementation using Verilog
+		</p>      	
+    </div>
+  </div>
+
+
+	<div class="column ca">
+    <div class="content">
+		<span class="image fit myImgclass">
+		<img id="myImg5" src="images/blog/blog-ca2.jpg" alt="Cache design">
+		</span>
+      	<a href="host/Course/CA-2.pdf" target="_blank">    
+			<center>   
+				<button class="btn"> Cache design </button>
+			</center>
+		</a><br>
+			<p>Analysis for various Cache parameters and X86 trade-offs
+		</p>      	
+    </div>
+  </div>
+
+
+
+	<div class="column dic">
+    <div class="content">
+		<span class="image fit myImgclass">
+		<img id="myImg6" src="images/blog/blog-dic1.jpg" alt="Tweet analytics">
+		</span>
+      	<a href="https://davidjeg-msundara.shinyapps.io/Flu_analytics/" target="_blank">    
+			<center>   
+				<button class="btn"> Twitter Analysis </button>
+			</center>
+		</a><br>
+			<p>Flu data analytics for People reacting to Flu in Twitter
+		</p>      	
+    </div>
+  </div>
+
+
+
+
+	<div class="column dic">
+    <div class="content">
+		<span class="image fit myImgclass">
+		<img id="myImg7" src="images/blog/blog-dic2.jpg" alt="Word Cloud">
+		</span>
+      	<a href="host/Course/DIC-2.pdf" target="_blank">    
+			<center>   
+				<button class="btn"> Word Cloud </button>
+			</center>
+		</a><br>
+			<p>Word Cloud analytics for Twitter, NYTimes and Commoncrawl
+		</p>      	
+    </div>
+  </div>
+
+
+
+	<div class="column dic ml">
+    <div class="content">
+		<span class="image fit myImgclass">
+		<img id="myImg8" src="images/blog/blog-dic3.jpg" alt="Word Cloud">
+		</span>
+      	<a href="host/Course/DIC-3.pdf" target="_blank">    
+			<center>   
+				<button class="btn"> Crime Prediction </button>
+			</center>
+		</a><br>
+			<p>Crime Category Prediction based on the geo-spatial and temporal dimensions
+		</p>      	
+    </div>
+  </div>
+
+
+
+
+
+
+<!-- https://davidjeg-msundara.shinyapps.io/visual_v0/ -->
+</div>
+
+
+							</div>
+						</div>
+
+
+												<div id="myModal" class="modal"><span class="close-me-at-times">&times;</span><img class="modal-content" id="img01"><div id="caption"></div>
+						</div>
+					</section>
+				</div>
+			</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+			<section id="main" class="wrapper">
+				<header>
+					<br>
+					<section>
+						<div class="box alt">
+							<div class="row uniform">
+								<div class="4u"><a href="blog.html"><span class="image fit"><img src="images/asset-blog.jpg" alt="" /></a><h3>Personal Blog</h3></span></div>
+								<div class="4u"><a href="certifications.html"><span class="image fit"><img src="images/asset-certifications.jpg" alt="" /></a><h3>Certification</h3></span></div>
+								<div class="4u"><a href="projects.html"><span class="image fit"><img src="images/asset-project.jpg" alt="" /></a><h3>Project Work</h3></span></div>
+							</div>
+						</div>
+					</section>
+				</header>	
+			</section>
+
+
+
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://twitter.com/JeganAbishek" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://facebook.com/davidjegan.abi" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/david_jegan/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/davidjegan" class="icon fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://linkedin.com/in/david-jegan-abishek-39556684/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:davidjeg@buffalo.edu" class="icon fa-envelope"><span class="label">Envelope</span></a></li>
+					</ul>
+					<ul class="contact">
+						<li><a href="https://www.google.co.in/maps/place/Buffalo,+NY/@42.8962176,-78.9344822,12z/data=!3m1!4b1!4m5!3m4!1s0x89d3126152dfe5a1:0x982304a5181f8171!8m2!3d42.8864468!4d-78.8783689" class="icon fa-map-marker"><span class="label"></span> &nbsp;&nbsp; Buffalo, NY 14214</a></li>
+						<li>(+1) 716 529 9285 </li>
+					</ul>
+					<ul class="links">
+						<li><a href="working.html">Support</a></li>
+						<li><a href="terms.html">Terms</a></li>
+						<li><a href="https://bakingpi.github.io">Baking Pi</a></li>
+					</ul>
+					<p class="copyright">&copy; David Jegan Abishek. All rights reserved.</p>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+			<script type="text/javascript">
+			var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close-me-at-times")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+
+var img2 = document.getElementById('myImg2');
+img2.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+
+var img3 = document.getElementById('myImg3');
+img3.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+
+var img4 = document.getElementById('myImg4');
+img4.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+
+var img5 = document.getElementById('myImg5');
+img5.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+
+var img6 = document.getElementById('myImg6');
+img6.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+
+
+var img7 = document.getElementById('myImg7');
+img7.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+var img8 = document.getElementById('myImg8');
+img8.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+var img9 = document.getElementById('myImg9');
+img9.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+var img10 = document.getElementById('myImg10');
+img10.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+var img11 = document.getElementById('myImg11');
+img11.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+var img12 = document.getElementById('myImg12');
+img12.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+
+var img13 = document.getElementById('myImg13');
+img13.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+var img14 = document.getElementById('myImg14');
+img14.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+var img15 = document.getElementById('myImg15');
+img15.onclick = function(){modal.style.display = "block";modalImg.src = this.src;captionText.innerHTML = this.alt;}
+
+</script>
+
+
+
+	</body>
+</html>
